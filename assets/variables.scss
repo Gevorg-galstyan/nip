@@ -1,0 +1,189 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+
+$material-light: (
+  background: var(--v-primary-base),
+  buttons: (
+    disabled: rgba(0, 0, 0, 0.25),
+  ),
+);
+$font-family-base: 'Manrope', sans-serif;
+$body-font-family: 'Manrope', sans-serif;
+$headings-font-family: 'Manrope', sans-serif;
+$headings: (
+  'h1': (
+    'weight': 400,
+    'size': 40px,
+    'line-height': 60px,
+  ),
+  'h2': (
+    'weight': 400,
+    'size': 28px,
+    'line-height': 40px,
+  ),
+  'h3': (
+    'weight': 600,
+    'size': 24px,
+    'line-height': 32px,
+  ),
+  'h4': (
+    'weight': 400,
+    'size': 18px,
+    'line-height': 24px,
+  ),
+  'h5': (
+    'weight': 400,
+    'size': 14px,
+    'line-height': 20px,
+  ),
+  'subtitle-2': (
+    'weight': 400,
+    'size': 11px,
+    'line-height': 13px,
+  ),
+  'title': (
+    'weight': 400,
+    'size': 18px,
+    'line-height': 20px,
+    'letter-spacing': .0333333333em,
+    'font-family': $body-font-family,
+    'text-transform': false
+  ),
+  'body-1': (
+    'weight': 400,
+    'size': 18px,
+    'line-height': 28px,
+  ),
+  'body-2': (
+    'weight': 400,
+    'size': 16px,
+    'line-height': 28px,
+  ),
+  'caption-1': (
+    'weight': 400,
+    'size': 14px,
+    'line-height': 16px,
+  ),
+  'caption-2': (
+    'size': 12px,
+    'weight': 400,
+    'line-height': 16px,
+    'letter-spacing': 0.0333333333em,
+    'font-family': $body-font-family,
+    'text-transform': false
+  ),
+  'footer': (
+    'size': 11px,
+    'weight': 500,
+    'line-height': 14px !important,
+    'letter-spacing': .0333333333em,
+    'font-family': $body-font-family,
+    'text-transform': false
+  ),
+);
+
+$red: (
+  'base': #F63C3C,
+);
+
+$error: (
+  'base': map-get($red, 'base'),
+);
+
+$green: (
+  'base': #13A622,
+);
+
+$blue: (
+  'base': #203084,
+  'lighten-6': #AABEFF,
+  'lighten-5': #E4E9F4,
+  'lighten-4': #D9DEEC,
+  'lighten-3': #8EA1D1,
+  'lighten-2': #04EFFE,
+  'lighten-1': #364F92,
+  'darken-1': #252C44,
+  'darken-2': #111E4B,
+  'darken-3': #0B1536,
+  'darken-4': #4065c4,
+  'darken-5': #6A7AAF,
+);
+
+$light-blue: (
+  'base': #00F2FE,
+);
+
+$indigo: (
+  'lighten-5': #AABEFF,
+);
+
+$yellow: (
+  'base': #E0FF22,
+  'lighten-1': #F3FFA9,
+  'darken-1': #758A2C,
+);
+
+$colors: (
+  'red': $red,
+  'green': $green,
+  'blue': $blue,
+  'yellow': $yellow,
+  'indigo': $indigo,
+  'error': $error,
+);
+
+$material-dark: (
+  background: map-get($blue, 'lighten-5'),
+  buttons: (
+    disabled: rgba(0, 0, 0, 0.25),
+  ),
+  tabs: #4065C3,
+  cards: map-get($blue, 'darken-2')
+);
+
+// Button
+$btn-outline-border-width: 3px;
+$btn-text-transform: none;
+$btn-active-opacity: 0;
+$btn-focus-opacity: 0;
+$btn-hover-opacity: 0;
+
+// Bottom button
+$btn-sizes: ('x-large': 75);
+
+// Card
+$card-outlined-border-width: 3px;
+$sheet-outlined-border-width: 3px;
+$card-border-radius: 10px;
+$list-item-content-padding: 8px;
+
+// Slider
+$slider-thumb-size: 30px;
+$slider-track-width: 21px;
+$slider-track-border-radius: 30px;
+
+$max-width: 500px;
+
+// Text field
+$text-field-outlined-fieldset-border-width: 0;
+$text-field-outlined-fieldset-border: 1px solid currentColor;
+$text-field-outlined-rounded-slot-padding: 0 16px;
+$text-field-filled-full-width-outlined-single-line-slot-min-height: 44px;
+
+// List
+//$list-padding: 0;
+//$list-item-padding: 0;
+
+// Menu
+$menu-content-elevation: 0;
+$menu-content-border-radius: 0;
+
+// DatePicker
+$date-picker-table-active-date-color: map-get($blue, 'lighten-5');
+$date-picker-table-date-button-width: 38px;
+$date-picker-table-date-width: 40px;
+$date-picker-table-date-font-weight: 400;
